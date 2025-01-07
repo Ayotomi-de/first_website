@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(20, 27, 20);
+    color: white;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+}
+
+img {
+    border: 3px solid silver;
+    padding: 3px;
+    margin: 5px;
+}
+
+video {
+    border: 3px solid silver;
+    padding: 3px;
+    margin: 3px;
+    float: left;
+}
+
+
+a:link {
+    color:blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: chocolate;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a0b0a1;
+    background-color: transparent;
+    text-decoration:underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
