@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ayotomide Ogunsami">
+    <meta name="description" content="HTML learning journey">
+    <title> Ayotomide's HTML learning journey </title>
+    <link rel="stylesheet" href="ayocode.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: springgreen;
+            color: black;
+        }
+
+        .nav-links a {
+            font-size: 120%;
+            margin-right: 30px;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: coral;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav-links">
+        <a href="#Introduction"
+            style="font-size: 90%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Introduction
+            &diams;</a>
+        <a href="#Poem" style="font-size: 90%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Poem
+            &diams;</a>
+        <a href="#Address" style="font-size: 90%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact
+            info &diams;</a>
+    </nav>
+
+    <section>
+        <h1 style="text-align: center; color: springgreen;" title="My Web development Journey"> <ins>Web development
+                Journey
+                😂🤭🌚</ins>
+        </h1>
+        <p id="introduction"> Hi everyone. I'm deepening my learning on HTML. Tag along to see how it goes! Right now,
+            I'm
+            gonna insert a
+            link
+            to my gmail inbox using the href attribute. </p>
+
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"> Ayotomide's Inbox </a>
+        <hr>
+        <p> So good news and bad news. Good news - the link worked. 🤭 Bad news - you don't get to see my inbox instead
+            you
+            have to register and open your own gmail account to see your inbox and not mine. 🌚 </p>
+        <hr>
+
+        <p>Now let me reveal the pretty face behind this website 😂🤭. Drum roll please...</p>
+        <figure>
+            <img src="WIN_20240521_18_14_28_Pro.jpg" alt="The web devoloper's image" width="290" height="250">
+            <figcaption style="color: springgreen;"> Ayotomide's Profile Picture </figcaption>
+        </figure>
+
+        <!--<video width="320" height="250">
+            <source src="Konstance - Melo (Official Video).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <p> Well, I know you can't see the face completely cos I don't want you too 😏, but isn't she <del>fine</del>
+            pretty? 🥹</p>
+        <hr>
+    </section>
+
+    <section>
+        <h1 style="text-align: center; color: springgreen;"><ins> Poem </ins></h1>
+        <p id="Poem">Now that we're done with introductions, I want you to enjoy this little poem of mine. </p>
+        <pre><em>
+        Roses are red
+
+        Violets are blue
+
+        God loves me
+
+        And he loves you too 🤍
+        </em>
+    </pre>
+    </section>
+
+    <section>
+        <h1 style="text-align: center; color: springgreen;"><ins> Fave things</ins></h1>
+        <p>I'm going to show you a bit about myself and the things I love in a tabular format. Who knows, we might have
+            kindred spirits🤭 </p>
+        <table style="width:70%;">
+            <caption>More about me</caption>
+            <tr>
+                <th>Favourite Colour</th>
+                <th>Favourite food</th>
+                <th>Favourite Hobby</th>
+            </tr>
+            <tr>
+                <td>Purple</td>
+                <td>Jollof Rice with Turkey</td>
+                <td>Reading</td>
+            </tr>
+        </table><br><br>
+    </section>
+
+    <section>
+        <h1 style="text-align: center; color: springgreen;"><ins>Fun questions!</ins></h1>
+        <p>So guys, I have a long list of different questions I'm gonna ask you starting from your favourite hobby.
+            Let's get started! </p>
+
+        <h2 style="color: springgreen; font-family:monospace; text-decoration: underline;">Favourite Hobby</h2>
+        <p>Guess my fave hobby. I'll give you a
+            hint, it starts with R and ends with r.</p>
+
+        <form action="Submit" method="get">
+            <input type="radio" id="cook" name="fav_hobby">
+            <label for="cook">Cooking</label><br>
+            <input type="radio" id="read" name="fav_hobby">
+            <label for="read">Reading</label><br>
+            <input type="radio" id="play" name="fav_hobby">
+            <label for="play">Playing games</label><br>
+            <input type="radio" id="draw" name="fav_hobby">
+            <label for="draw">Drawing</label><br>
+            <input type="radio" id="eat" name="fav_hobby">
+            <label for="eat">Eating</label><br>
+            <input type="radio" id="sing" name="fav_hobby">
+            <label for="sing">Singing</label><br>
+            <input type="radio" id="dance" name="fav_hobby">
+            <label for="dance">Dancing</label><br><br>
+
+            <input type="submit" value="Submit &diams;">
+        </form>
+
+        <h2 style="color: springgreen; font-family: monospace; text-decoration: underline;">Favourite Color</h2>
+        <p>I've already given out my fave color already but guess what, I'm gonna allow you select more than one color.
+            I'm a good girl, I know. 😌</p>
+
+        <form action="Submit" method="get">
+            <input type="checkbox" id="red" name="fav_color">
+            <label for="red">Red</label><br>
+            <input type="checkbox" id="blue" name="fav_color">
+            <label for="blue">Blue</label><br>
+            <input type="checkbox" id="green" name="fav_color">
+            <label for="green">Green</label><br>
+            <input type="checkbox" id="yellow" name="fav_color">
+            <label for="yellow">Yellow</label><br>
+            <input type="checkbox" id="purple" name="fav_color">
+            <label for="purple">Purple</label><br>
+            <input type="checkbox" id="white" name="fav_color">
+            <label for="white">White</label><br>
+            <input type="checkbox" id="black" name="fav_color">
+            <label for="black">Black</label><br><br>
+
+            <input type="submit" value="Submit &diams;"><br>
+        </form>
+
+
+    </section>
+
+    <section>
+        <h1 style="text-align: center; color: springgreen;"><ins>Your Details</ins></h1>
+        <p>Thanks for checking out my website even though it isn't the best thing yet. I really apppreciate it. Can you
+            do me a favour and play with thiss form by filling your details. Who knows, I might even send an
+            appreciation mail. Thanks again!</p>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <form action="Submit" method="post" autocomplete="on">
+                <label for="fname">Firstname:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Lastname:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <input type="submit" value="Submit &diams;"><br>
+            </form> <br>
+        </fieldset>
+
+        <h2 style="color: springgreen; font-family: monospace; text-decoration: underline;">Send a message to me!</h2>
+        <p>You can send a message to me down below. I'll be more than happy to see you responses and feedback on this
+            website.</p>
+
+        <form action="Submit">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="10" cols="30"></textarea><br><br>
+            <input type="submit" value="Submit &diams;">
+        </form>
+    </section> <br>
+
+    <section><br>
+        <address id="Address">
+            Written by Ayotomide Ogunsami.<br>
+            <a href="mailto:ayotomide.toluwani@gmail.com"
+                title="Ayotomide's gmail account">ayotomide.toluwani@gmail.com</a><br>
+            Your fave girl 🤭🤍.
+        </address><br>
+
+        <button type="button" onclick="alert('Thanks for coming!')">
+            Click me
+        </button>
+    </section> <br>
+
+    <footer>
+        <p>&copy; 2025 Ayotomide Ogunsami. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
